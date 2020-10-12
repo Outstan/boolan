@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_30"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center">
+
+            <TextView
+                android:id="@+id/sha_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="转发内容"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/sha_nickname1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="木杉" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center">
+
+            <TextView
+                android:id="@+id/sha_send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_orangr_jianbian"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sha_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@null"
+            android:hint="说说分享心得..."
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sha_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:backgroundImage="@android:color/white"
+                fresco:failureImage="@mipmap/icon_failure"
+                fresco:failureImageScaleType="centerCrop"
+                fresco:placeholderImage="@mipmap/icon_placeholder"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:retryImage="@mipmap/icon_retry"
+                fresco:retryImageScaleType="centerCrop"
+                fresco:roundingBorderColor="@color/gray_trans"
+                fresco:roundingBorderWidth="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:background="#1a888888"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/sha_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:text="木菜市场杉"/>
+                <TextView
+                    android:id="@+id/sha_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="此时此刻女乘客怎么处理可名乘客整理库存v你的伤口才能看来你看下支持了看你们仓库蓝色从 "/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/tv_back"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_user_name"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:hint="输入用户名/手机号"
+        android:textSize="18sp"
+        app:met_baseColor="#000"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="输入用户名/手机号"
+        app:met_floatingLabelTextColor="@color/blue_trans"
+        app:met_floatingLabelTextSize="15sp"
+        app:met_iconLeft="@drawable/account"
+        app:met_primaryColor="@color/blue_trans"
+        app:met_textColor="@color/blue_trans"
+        app:met_textColorHint="#000" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_psw"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:met_baseColor="#000"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="输入密码"
+        app:met_floatingLabelTextSize="15sp"
+        app:met_floatingLabelTextColor="@color/blue_trans"
+        app:met_iconLeft="@drawable/password"
+        app:met_primaryColor="@color/blue_trans"
+        app:met_textColor="@color/blue_trans"
+        app:met_textColorHint="#000" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/password_ns"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-40dp" />
+
+    <Button
+        android:id="@+id/fin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/password_s"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-40dp"
+        android:visibility="gone"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_pswa"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:met_baseColor="#000"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="请再次输入密码"
+        app:met_floatingLabelTextColor="@color/blue_trans"
+        app:met_floatingLabelTextSize="15sp"
+        app:met_iconLeft="@drawable/password"
+        app:met_primaryColor="@color/blue_trans"
+        app:met_textColor="@color/blue_trans"
+        app:met_textColorHint="#000" />
+
+    <Button
+        android:id="@+id/reshow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/password_ns"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-40dp" />
+
+    <Button
+        android:id="@+id/refin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/password_s"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="-40dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
